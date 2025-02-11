@@ -7,10 +7,15 @@ export interface Character {
   eye_color: string
   birth_year: string
   gender: string
+  skin_color: string
+  url: string
 }
 
 export async function fetchStarWarsCharacters(): Promise<Character[]> {
   const response = await fetch('https://swapi.dev/api/people')
+  if (!response.ok) {
+    throw new Error('Bad Response')
+  }
   const data = await response.json()
   return data.results
 }

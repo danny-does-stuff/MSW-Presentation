@@ -4,7 +4,7 @@ Demo Steps
    a. App.tsx - Shows a list of Star Wars characters and a joke
    b. server calls - starWars.ts and jokes.ts
    b. src/mocks folder... we'll get there later
-2. Consider alternative approach - hard coded data
+2. Consider alternative approach to mocking - hard coded data
    a. Hard code the Star Wars characters in useState
 3. Setup MSW (npx msw init ./public --save)
    a. Add Star Wars handler in handlers.ts - see mock data in starWarsMocks.ts
