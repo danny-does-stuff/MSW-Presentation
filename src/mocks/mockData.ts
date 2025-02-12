@@ -6,7 +6,7 @@ export function getMockStarWarsCharacters() {
     {
       name: 'Luke Skywalker',
       height: '172',
-      mass: '77',
+      mass: '7777',
       hair_color: 'blond',
       skin_color: 'fair',
       eye_color: 'blue',

@@ -38,7 +38,7 @@ export function App() {
                   </h3>
                   <div className="mt-2 grid grid-cols-2 gap-2 text-sm text-gray-600">
                     <div>Height: {character.height}cm</div>
-                    <div>Mass: {character.mass}kg</div>
+                    <div>Mass: {Number(character.mass).toLocaleString()}kg</div>
                     <div>Hair: {character.hair_color}</div>
                     <div>Eyes: {character.eye_color}</div>
                     <div>Born: {character.birth_year}</div>
@@ -67,10 +67,6 @@ export function App() {
             <p className="italic text-gray-500">
               Click the button to get a joke
             </p>
-          : joke.punchline.includes(' a ') ?
-            (() => {
-              throw new Error('Bad Joke')
-            })()
           : <>
               <p className="mb-2 text-gray-600">{joke.setup}</p>
               <p className="font-medium text-gray-800">{joke.punchline}</p>
